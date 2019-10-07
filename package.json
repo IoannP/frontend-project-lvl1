@@ -15,7 +15,8 @@
     "@babel/core": "^7.6.2",
     "@babel/node": "^7.6.2",
     "@babel/plugin-proposal-pipeline-operator": "^7.5.0",
-    "@babel/preset-env": "^7.6.2"
+    "@babel/preset-env": "^7.6.2",
+    "readline-sync": "^1.4.10"
   },
   "files": [
     "dist"
