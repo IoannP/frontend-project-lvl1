@@ -4,10 +4,13 @@ BRAIN-GAMES
 
 <a href="https://travis-ci.org/gioahnn/frontend-project-lvl1"><img src="https://travis-ci.org/gioahnn/frontend-project-lvl1.svg?branch=master"></a>
 
-Setup
+SETUP
+
 	<a href="https://asciinema.org/a/Xb2JTxU8N0dY933d9pH4vD4Bd" target="_blank"><img src="https://asciinema.org/a/Xb2JTxU8N0dY933d9pH4vD4Bd.svg" /></a>
 
-Run game
+GAMES
+	
 	<a href="https://asciinema.org/a/11ighHuzsbDmAgAh7JjpozpiF" target="_blank"><img src="https://asciinema.org/a/11ighHuzsbDmAgAh7JjpozpiF.svg" /></a>
+	
 	
 	<a href="https://asciinema.org/a/pOXYwvsSddZwOc8HEUMkEsMIN" target="_blank"><img src="https://asciinema.org/a/pOXYwvsSddZwOc8HEUMkEsMIN.svg" /></a>
