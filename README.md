@@ -8,9 +8,14 @@ SETUP
 
 	<a href="https://asciinema.org/a/Xb2JTxU8N0dY933d9pH4vD4Bd" target="_blank"><img src="https://asciinema.org/a/Xb2JTxU8N0dY933d9pH4vD4Bd.svg" /></a>
 
+
 GAMES
 	
+	brain-games
 	<a href="https://asciinema.org/a/11ighHuzsbDmAgAh7JjpozpiF" target="_blank"><img src="https://asciinema.org/a/11ighHuzsbDmAgAh7JjpozpiF.svg" /></a>
 	
-	
+	brain-even
 	<a href="https://asciinema.org/a/pOXYwvsSddZwOc8HEUMkEsMIN" target="_blank"><img src="https://asciinema.org/a/pOXYwvsSddZwOc8HEUMkEsMIN.svg" /></a>
+	
+	brain-calc
+	<a href="https://asciinema.org/a/dY10ooJh35cpvLJpllIP9Cd6U" target="_blank"><img src="https://asciinema.org/a/dY10ooJh35cpvLJpllIP9Cd6U.svg" /></a>

@@ -3,13 +3,13 @@ install:
 
 
 start: 
-	npx babel-node src/bin/brain-games.js
+	npx babel-node src/bin/games/brain-games.js
 
 start-even:
-	npx babel-node src/bin/brain-even.js
+	npx babel-node src/bin/games/brain-even.js
 
 start-calc:
-	npx babel-node src/bin/brain-calc.js
+	npx babel-node src/bin/games/brain-calc.js
 
 publish-dry: 
 	npm publish --dry-run

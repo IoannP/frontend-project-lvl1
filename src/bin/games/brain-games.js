@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { readlineSync } from '..';
+import { readlineSync } from '../..';
 
 console.log('Welcom to the Brain Games!');
 
