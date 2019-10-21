@@ -12,10 +12,10 @@ SETUP
 GAMES
 	
 brain-games
-<a href="https://asciinema.org/a/11ighHuzsbDmAgAh7JjpozpiF" target="_blank"><img src="https://asciinema.org/a/11ighHuzsbDmAgAh7JjpozpiF.svg" /></a>
+[![asciicast](https://asciinema.org/a/pOXYwvsSddZwOc8HEUMkEsMIN.svg)](https://asciinema.org/a/pOXYwvsSddZwOc8HEUMkEsMIN)
 	
 brain-even
-<a href="https://asciinema.org/a/pOXYwvsSddZwOc8HEUMkEsMIN" target="_blank"><img src="https://asciinema.org/a/pOXYwvsSddZwOc8HEUMkEsMIN.svg" /></a>
+[![asciicast](https://asciinema.org/a/11ighHuzsbDmAgAh7JjpozpiF.svg)](https://asciinema.org/a/11ighHuzsbDmAgAh7JjpozpiF)
 	
 brain-calc
 [![asciicast](https://asciinema.org/a/dY10ooJh35cpvLJpllIP9Cd6U.svg)](https://asciinema.org/a/dY10ooJh35cpvLJpllIP9Cd6U)
