@@ -16,7 +16,10 @@ parser: babel-eslint
 
 extends:
   - 'airbnb-base'
-  - 'plugin:jest/recommended'
 
 rules:
   no-console: 0
+  eqeqeq: 0
+  linebreak-style: 0
+  no-eval: [2, {"allowIndirect": true}] 
+  # https://eslint.org/docs/rules/no-eval#options

@@ -1,30 +1,47 @@
 #!/usr/bin/env node
 
 import readlineSync from 'readline-sync';
+import safeEval from 'safe-eval';
 
 export { default as readlineSync } from 'readline-sync';
 
-// brain-even
-const isEven = (num) => (num % 2 === 0 ? 'yes' : 'no');
-
-export const question = (num, name) => {
-  console.log(`Question: ${num}`);
-  const answer = readlineSync.question('Your answer: ');
-  if (answer === isEven(num)) {
-    console.log('Correct!');
-    return true;
-  }
-  return console.log(`'${answer}' is wrong answer ;(. Correct answer was '${isEven(num)}'. \nLet's try again, ${name}!`);
-};
-
-export const games = (f) => (a, b, c, name) => {
+// game flow
+export const game = (f1) => (arg1, arg2, arg3, name, f2) => {
   for (;;) {
-    if (f(a, name) !== true) { break; }
-    if (f(b, name) !== true) { break; }
-    if (f(c, name) === true) {
+    if (f1(arg1, f2, name) !== true) { break; }
+    if (f1(arg2, f2, name) !== true) { break; }
+    if (f1(arg3, f2, name) === true) {
       return `Congratulations, ${name}!`;
     }
     break;
   }
   return ' ';
 };
+
+export const question = (arg, func, name) => {
+  console.log(`Question: ${arg}`);
+  const answer = readlineSync.question('Your answer: ');
+  if (answer == func(arg)) {
+    console.log('Correct!');
+    return true;
+  }
+  return console.log(`'${answer}' is wrong answer ;(. Correct answer was '${func(arg)}'. \nLet's try again, ${name}!`);
+};
+
+export const getRandomNumber = (min, max) => (Math.floor(Math.random() * (max - min + 1) + min));
+
+// brain-even
+export const isEven = (num) => (num % 2 === 0 ? 'yes' : 'no');
+
+// brain-calc
+export const getExpression = (func) => (arg1, arg2) => {
+  if (func(1, 3) === 1) {
+    return `${arg1} + ${arg2}`;
+  }
+  if (func(1, 3) === 2) {
+    return `${arg1} - ${arg2}`;
+  }
+  return `${arg1} * ${arg2}`;
+};
+
+export const getSum = (string) => (safeEval(string));

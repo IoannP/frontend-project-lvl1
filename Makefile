@@ -8,6 +8,9 @@ start:
 start-even:
 	npx babel-node src/bin/brain-even.js
 
+start-calc:
+	npx babel-node src/bin/brain-calc.js
+
 publish-dry: 
 	npm publish --dry-run
 
