@@ -6,16 +6,18 @@ BRAIN-GAMES
 
 SETUP
 
-<a href="https://asciinema.org/a/Xb2JTxU8N0dY933d9pH4vD4Bd" target="_blank"><img src="https://asciinema.org/a/Xb2JTxU8N0dY933d9pH4vD4Bd.svg" /></a>
-
+[![asciicast](https://asciinema.org/a/SYxNKlup6sO50ZocHLoxRUnc2.svg)](https://asciinema.org/a/SYxNKlup6sO50ZocHLoxRUnc2)
 
 GAMES
 	
 brain-games
-[![asciicast](https://asciinema.org/a/pOXYwvsSddZwOc8HEUMkEsMIN.svg)](https://asciinema.org/a/pOXYwvsSddZwOc8HEUMkEsMIN)
+[![asciicast](https://asciinema.org/a/PsKCCmCrAl2Hj2W2mlp42N9bE.svg)](https://asciinema.org/a/PsKCCmCrAl2Hj2W2mlp42N9bE)
 	
 brain-even
-[![asciicast](https://asciinema.org/a/11ighHuzsbDmAgAh7JjpozpiF.svg)](https://asciinema.org/a/11ighHuzsbDmAgAh7JjpozpiF)
+[![asciicast](https://asciinema.org/a/B35Bkx9Xf8FI6AcSuUQWd7OAA.svg)](https://asciinema.org/a/B35Bkx9Xf8FI6AcSuUQWd7OAA)
 	
 brain-calc
-[![asciicast](https://asciinema.org/a/dY10ooJh35cpvLJpllIP9Cd6U.svg)](https://asciinema.org/a/dY10ooJh35cpvLJpllIP9Cd6U)
+[![asciicast](https://asciinema.org/a/QMURm67lKJH6oBwQideL7pLnt.svg)](https://asciinema.org/a/QMURm67lKJH6oBwQideL7pLnt)
+
+brain-gcd
+[![asciicast](https://asciinema.org/a/7apQzLmeAa9U0U8Lno7EBcCdJ.svg)](https://asciinema.org/a/7apQzLmeAa9U0U8Lno7EBcCdJ)

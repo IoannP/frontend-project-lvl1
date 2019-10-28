@@ -4,12 +4,12 @@
   "description": "",
   "main": "dist/index.js",
   "bin": {
-    "brain-games": "dist/bin/brain-games.js",
-    "brain-even": "dist/bin/brain-even.js",
-    "brain-calc": "dist/bin/brain-calc.js"
+    "brain-games": "dist/bin/games/brain-games.js",
+    "brain-even": "dist/bin/games/brain-even.js",
+    "brain-calc": "dist/bin/games/brain-calc.js",
+    "brain-gcd": "dist/bin/games/brain-gcd.js"
   },
   "dependencies": {
-    "@hexlet/pairs": "^1.0.10",
     "npm": "^6.12.0",
     "readline-sync": "^1.4.10",
     "safe-eval": "^0.4.1",

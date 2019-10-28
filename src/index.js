@@ -19,7 +19,7 @@ export const game = (f1) => (arg1, arg2, arg3, name, f2) => {
 };
 
 export const question = (arg, func, name) => {
-  console.log(`Question: ${arg}`);
+  console.log(`Question: ${arg.join(' ')}`);
   const answer = readlineSync.question('Your answer: ');
   if (answer == func(arg)) {
     console.log('Correct!');
@@ -34,14 +34,26 @@ export const getRandomNumber = (min, max) => (Math.floor(Math.random() * (max - 
 export const isEven = (num) => (num % 2 === 0 ? 'yes' : 'no');
 
 // brain-calc
-export const getExpression = (func) => (arg1, arg2) => {
+export const getExpression = (func) => (argument) => {
   if (func(1, 3) === 1) {
-    return `${arg1} + ${arg2}`;
+    return [argument.join(' + ')];
   }
   if (func(1, 3) === 2) {
-    return `${arg1} - ${arg2}`;
+    return [argument.join(' - ')];
   }
-  return `${arg1} * ${arg2}`;
+  return [argument.join(' * ')];
 };
 
 export const getSum = (string) => (safeEval(string));
+
+// brain-gcd
+export const greatestCommonDivisor = (argument) => {
+  let arg1 = argument[0];
+  let arg2 = argument[1];
+  while (arg2) {
+    const divisor = arg2;
+    arg2 = arg1 % arg2;
+    arg1 = divisor;
+  }
+  return arg1;
+};
