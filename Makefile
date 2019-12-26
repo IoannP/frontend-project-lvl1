@@ -14,6 +14,9 @@ start-calc:
 start-gcd:
 	npx babel-node src/bin/games/brain-gcd.js
 
+start-prog:
+	 npx babel-node src/bin/games/brain-progression.js
+
 publish-dry: 
 	npm publish --dry-run
 
