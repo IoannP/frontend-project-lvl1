@@ -1,7 +1,7 @@
 {
   "name": "brain-project",
-  "version": "1.6.4",
-  "description": "",
+  "version": "1.6.5",
+  "description": "Number games",
   "main": "dist/index.js",
   "bin": {
     "brain-games": "dist/bin/games/brain-games.js",
@@ -42,11 +42,22 @@
     "type": "git",
     "url": "git+ssh://git@github.com/gioahnn/frontend-project-lvl1.git"
   },
-  "author": "",
+  "author": {
+    "name": "Ioann Pilipchuk",
+    "url": "https://github.com/gioahnn"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/gioahnn/frontend-project-lvl1/issues"
   },
+  "keywords": [
+    "games",
+    "even",
+    "calculation",
+    "divisor",
+    "progression",
+    "prime"
+  ],
   "jest": {
     "testEnvironment": "node"
   },
