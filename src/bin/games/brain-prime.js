@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import {
   readlineSync, game, question, getRandomNumber,
   isPrime,
