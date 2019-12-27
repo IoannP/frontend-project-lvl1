@@ -15,7 +15,10 @@ start-gcd:
 	npx babel-node src/bin/games/brain-gcd.js
 
 start-prog:
-	 npx babel-node src/bin/games/brain-progression.js
+	npx babel-node src/bin/games/brain-progression.js
+
+start-prime:
+	npx babel-node src/bin/games/brain-prime.js
 
 publish-dry: 
 	npm publish --dry-run
