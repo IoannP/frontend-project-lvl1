@@ -1,15 +1,10 @@
 #!/usr/bin/env node
 
-import {
-  readlineSync, game, question, getRandomNumber,
-  progression, finder,
-} from '../..';
+import { enviroment, getRandomNumber } from '../..';
+import { progression, finder } from '../../game-progression';
 
-console.log('Welcome to the Brain Games!');
-console.log('What number is missing in the progression?');
-const name = readlineSync.question('May I have your name? ');
-console.log(`Hello, ${name}!`);
-
-console.log(game(question)(progression(getRandomNumber(1, 100)),
-  progression(getRandomNumber(1, 100)),
-  progression(getRandomNumber(1, 100)), name, finder));
+console.log(enviroment(finder,
+  [progression(getRandomNumber(1, 100)),
+    progression(getRandomNumber(1, 100)),
+    progression(getRandomNumber(1, 100))],
+  'What number is missing in the progression?'));

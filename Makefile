@@ -20,6 +20,9 @@ start-prog:
 start-prime:
 	npx babel-node src/bin/games/brain-prime.js
 
+exercise:
+	npx babel-node src/exercises.js
+
 publish-dry: 
 	npm publish --dry-run
 
