@@ -1,9 +1,7 @@
-#!/usr/bin/env node
-
 import safeEval from 'safe-eval';
-import { getRandomNumber } from '..';
+import { flow, getRandomNumber } from './index';
 
-export const getExpression = (argument) => {
+const getExpression = (argument) => {
   if (getRandomNumber(1, 3) === 1) {
     return [argument.join(' + ')];
   }
@@ -13,4 +11,12 @@ export const getExpression = (argument) => {
   return [argument.join(' * ')];
 };
 
-export const calculation = (string) => (safeEval(string));
+const calculation = (string) => (safeEval(string));
+
+export default () => {
+  flow(calculation,
+    [getExpression([getRandomNumber(1, 100), getRandomNumber(1, 100)]),
+      getExpression([getRandomNumber(1, 100), getRandomNumber(1, 100)]),
+      getExpression([getRandomNumber(1, 100), getRandomNumber(1, 100)])],
+    'What is the result of the expression?');
+};

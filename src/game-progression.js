@@ -1,26 +1,32 @@
-#!/usr/bin/env node
+import { flow, getRandomNumber } from './index';
 
-import { getRandomNumber } from '..';
-
-export const progression = (arg, acc = getRandomNumber(1, 100), space = getRandomNumber(1, 10)) => {
-  const result = [];
-  let argument = arg;
+const makeProgression = (start, acc = getRandomNumber(1, 100), space = getRandomNumber(1, 10)) => {
+  const progression = [];
+  let numberOfProgression = start;
   for (let i = 1; i <= 10; i += 1) {
     if (space === i) {
-      result.push('..');
-      argument += acc;
+      progression.push('..');
+      numberOfProgression += acc;
     } else {
-      result.push(argument);
-      argument += acc;
+      progression.push(numberOfProgression);
+      numberOfProgression += acc;
     }
   }
-  return result;
+  return progression;
 };
 
-export const finder = (arg) => {
-  const index = arg.indexOf('..');
+const finder = (progression) => {
+  const index = progression.indexOf('..');
   if (index <= 5) {
-    return (arg[index + 1] - arg[index + 2]) + arg[index + 1];
+    return (progression[index + 1] - progression[index + 2]) + progression[index + 1];
   }
-  return (arg[index - 1] - arg[index - 2]) + arg[index - 1];
+  return (progression[index - 1] - progression[index - 2]) + progression[index - 1];
+};
+
+export default () => {
+  flow(finder,
+    [makeProgression(getRandomNumber(1, 100)),
+      makeProgression(getRandomNumber(1, 100)),
+      makeProgression(getRandomNumber(1, 100))],
+    'What number is missing in the progression?');
 };
