@@ -1,19 +1,18 @@
-module.exports = {
-  presets: [
-    ['@babel/preset-env',
-      {
-        targets: {
-          node: 'current',
-        },
+const presets = [
+  ['@babel/preset-env',
+    {
+      targets: {
+        node: 'current',
       },
-    ],
+    },
   ],
-  plugins: [
-    [
-      '@babel/plugin-proposal-pipeline-operator',
-      {
-        proposal: 'minimal',
-      },
-    ],
+];
+const plugins = [
+  [
+    '@babel/plugin-proposal-pipeline-operator',
+    {
+      proposal: 'minimal',
+    },
   ],
-};
+];
+module.exports = { presets, plugins };
