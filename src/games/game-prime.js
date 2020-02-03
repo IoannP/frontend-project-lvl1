@@ -1,5 +1,5 @@
-import flow from '../../index';
-import getRandomNumber from '../../utils';
+import flow from '../index';
+import getRandomNumber from '../utils';
 
 const isPrime = (number) => {
   if (number < 2) {
@@ -14,10 +14,12 @@ const isPrime = (number) => {
 
 const transformBoolean = (number) => (isPrime(number) ? 'yes' : 'no');
 
-// arguments of game (rounds)
-const numbers = [getRandomNumber(1, 100), getRandomNumber(1, 100), getRandomNumber(1, 100)];
+// arguments of game
+const questions = [getRandomNumber(1, 100), getRandomNumber(1, 100), getRandomNumber(1, 100)];
+
+const answers = questions.map(transformBoolean);
 
 const leadIn = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 // game
-export default () => (flow(transformBoolean, numbers, leadIn));
+export default () => (flow(questions, answers, leadIn));

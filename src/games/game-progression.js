@@ -1,5 +1,5 @@
-import flow from '../../index';
-import getRandomNumber from '../../utils';
+import flow from '../index';
+import getRandomNumber from '../utils';
 
 const makeProgression = (firstNumber, space, length = 10) => {
   const progression = [];
@@ -19,16 +19,18 @@ const finder = (progression) => {
   const index = toArray.indexOf('..');
   const middle = Math.round(toArray.length / 2);
   return (index <= middle)
-    ? (toArray[index + 1] * 2) - toArray[index + 2]
-    : (toArray[index - 1] * 2) - toArray[index - 2];
+    ? `${(toArray[index + 1] * 2) - toArray[index + 2]}`
+    : `${(toArray[index - 1] * 2) - toArray[index - 2]}`;
 };
 
-// arguments of game (rounds)
-const firstRound = makeProgression(getRandomNumber(1, 100), getRandomNumber(1, 100));
-const secondRound = makeProgression(getRandomNumber(1, 100), getRandomNumber(1, 100));
-const thirdRound = makeProgression(getRandomNumber(1, 100), getRandomNumber(1, 100));
+// arguments of game
+const questions = [makeProgression(getRandomNumber(1, 100), getRandomNumber(1, 100)),
+  makeProgression(getRandomNumber(1, 100), getRandomNumber(1, 100)),
+  makeProgression(getRandomNumber(1, 100), getRandomNumber(1, 100))];
+
+const answers = questions.map(finder);
 
 const leadIn = 'What number is missing in the progression?';
 
 // game
-export default () => (flow(finder, [firstRound, secondRound, thirdRound], leadIn));
+export default () => (flow(questions, answers, leadIn));

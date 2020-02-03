@@ -11,9 +11,7 @@
     "brain-prime": "dist/bin/brain-prime.js"
   },
   "dependencies": {
-    "readline-sync": "^1.4.10",
-    "safe-eval": "^0.4.1",
-    "source-map-support": "^0.5.16"
+    "readline-sync": "^1.4.10"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.3",

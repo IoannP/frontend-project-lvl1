@@ -12,9 +12,6 @@ Install
 
 Usage
 	
-brain-games
-[![asciicast](https://asciinema.org/a/PsKCCmCrAl2Hj2W2mlp42N9bE.svg)](https://asciinema.org/a/PsKCCmCrAl2Hj2W2mlp42N9bE)
-	
 brain-even
 [![asciicast](https://asciinema.org/a/B35Bkx9Xf8FI6AcSuUQWd7OAA.svg)](https://asciinema.org/a/B35Bkx9Xf8FI6AcSuUQWd7OAA)
 	
