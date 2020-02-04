@@ -15,12 +15,24 @@ const operationPicker = (numberOne, numberTwo) => [numberOne, numberTwo].join(pi
 // resulting function
 const calculator = (operation) => {
   const toArray = operation.split(' ');
-  const firstNumber = Number(toArray[0]);
-  const secondNumber = Number(toArray[2]);
-  const sign = toArray[1];
-  if (sign === '*') return `${firstNumber * secondNumber}`;
-  if (sign === '+') return `${firstNumber + secondNumber}`;
-  return `${firstNumber - secondNumber}`;
+  const firstOperand = Number(toArray[0]);
+  const secondOperand = Number(toArray[2]);
+  const operator = toArray[1];
+  let result;
+  switch (operator) {
+    case '+':
+      result = `${firstOperand + secondOperand}`;
+      break;
+    case '-':
+      result = `${firstOperand - secondOperand}`;
+      break;
+    case '*':
+      result = `${firstOperand * secondOperand}`;
+      break;
+    default:
+      break;
+  }
+  return result;
 };
 
 // arguments of game
