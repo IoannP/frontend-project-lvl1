@@ -9,5 +9,7 @@ jobs:
     
     steps:
       - uses: actions/checkout@v1
+      - name: npm install
+        run: make install
       - name: run eslint
         run: make lint
