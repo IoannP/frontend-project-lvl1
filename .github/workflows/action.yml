@@ -16,10 +16,6 @@ jobs:
       - uses: actions/checkout@master
       
       - name: maintainability 
-        run: |
-          npm install -g yarn
-          yarn install
-          yarn build
       - uses: paambaati/codeclimate-action@v2.2.4
         env:
           CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
