@@ -9,7 +9,6 @@ const getOperator = () => {
   return operators[sign];
 };
 
-// resulting function
 const calculator = (operator, firstOperand, secondOperand) => {
   switch (operator) {
     case '+':
@@ -23,7 +22,7 @@ const calculator = (operator, firstOperand, secondOperand) => {
   }
 };
 
-// arguments of game
+// game's parameters
 const getDataGame = () => {
   const numberOne = getRandomNumber(1, 100);
   const numberTwo = getRandomNumber(1, 100);
