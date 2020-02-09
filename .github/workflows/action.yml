@@ -13,9 +13,9 @@ jobs:
         run: make install
       - name: run eslint
         run: make lint
-  
-      - name: Test & publish code coverage
+        
       - uses: paambaati/codeclimate-action@v2.4.0
+      - name: Test & publish code coverage
         env:
           CC_TEST_REPORTER_ID: 8f44ab485f40a2cdf8ee8b0d6d21dd07c09e074da59bdffc740828d6fc97bcb2
         with:
