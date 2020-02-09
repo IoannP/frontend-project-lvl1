@@ -13,7 +13,9 @@ jobs:
         run: make install
       - name: run eslint
         run: make lint
-        
+  maintainability-checks:
+    runs-on: ubuntu-18.04
+    steps:    
       - uses: paambaati/codeclimate-action@v2.4.0
       - name: Test & publish code coverage
         env:
