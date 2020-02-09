@@ -1,8 +1,8 @@
 BRAIN-GAMES
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
+![Lint-test](https://github.com/gioahnn/frontend-project-lvl1/workflows/Lint-test/badge.svg)
 
-[![Test Coverage](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage)](https://codeclimate.com/github/codeclimate/codeclimate/test_coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/268b83ce0bed46987dff/maintainability)](https://codeclimate.com/github/gioahnn/frontend-project-lvl1/maintainability)
 
 <a href="https://travis-ci.org/gioahnn/frontend-project-lvl1"><img src="https://travis-ci.org/gioahnn/frontend-project-lvl1.svg?branch=master"></a>
 
