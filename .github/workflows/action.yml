@@ -1,0 +1,11 @@
+name: Lint-test
+
+on: [push]
+
+jobs:
+  eslint:
+    name: Running ESLint
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v1
+      - uses: stefanoeb/eslint-action@1.0.2
