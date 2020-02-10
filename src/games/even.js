@@ -9,7 +9,7 @@ const getDataGame = () => {
   return [question, answer];
 };
 
-const leadIn = 'Answer \'yes\' if the number is even, otherwise answer \'no\'.';
+const description = 'Answer \'yes\' if the number is even, otherwise answer \'no\'.';
 
 // game
-export default () => (flow(getDataGame, leadIn));
+export default () => (flow(getDataGame, description));

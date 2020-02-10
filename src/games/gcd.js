@@ -8,7 +8,7 @@ const getGreatestCommonDivisor = (firstNumber, secondNumber) => {
   return a;
 };
 
-// game's parametrs
+// game's parameters
 const getDataGame = () => {
   const numberOne = getRandomNumber(1, 100);
   const numberTwo = getRandomNumber(1, 100);

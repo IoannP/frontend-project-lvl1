@@ -12,7 +12,7 @@ const isPrime = (number) => {
   return true;
 };
 
-// game's parametrs
+// game's parameters
 const getDataGame = () => {
   const question = getRandomNumber(1, 100);
   const answer = isPrime(question) ? 'yes' : 'no';
