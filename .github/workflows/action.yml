@@ -1,6 +1,8 @@
 name: Lint-test
 
-on: [status]
+on: 
+  - status
+  - push
 
 jobs:
   build:
@@ -9,9 +11,9 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Setup node
-      - uses: actions/setup-node@v1
+        uses: actions/setup-node@v1
         with:
-          node-version: '13'
+          node-version: '13.x'
       - name: npm install
         run: make install
       - name: Running ESLint
