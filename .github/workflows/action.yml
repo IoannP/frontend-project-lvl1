@@ -1,7 +1,6 @@
 name: Lint-test
 
 on: 
-  - commit_comment
   - push
 
 jobs:
