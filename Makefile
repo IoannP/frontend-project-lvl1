@@ -20,7 +20,7 @@ start-prog:
 start-prime:
 	npx babel-node src/bin/brain-prime.js
 
-publish-dry: 
+prepublish: 
 	npm publish --dry-run
 
 
