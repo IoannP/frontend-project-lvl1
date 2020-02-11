@@ -1,6 +1,6 @@
 {
   "name": "brain-project",
-  "version": "1.6.7",
+  "version": "1.6.8",
   "description": "Number games",
   "bin": {
     "brain-even": "dist/bin/brain-even.js",

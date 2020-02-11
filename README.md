@@ -2,36 +2,37 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/268b83ce0bed46987dff/maintainability)](https://codeclimate.com/github/gioahnn/frontend-project-lvl1/maintainability)
 
-# BRAIN-GAMES
-### Welcom to the brain-games. This package is several number games.
+# BRAIN-GAMES 
+---
+#### Welcom to the brain-games. This package is several number games.
 
-## Installation 
->To install BRAIN-GAMES, use npm
+
+## Installation
+##### To install BRAIN-GAMES, use npm
 ```npm install brain-project```
-[![asciicast](https://asciinema.org/a/SYxNKlup6sO50ZocHLoxRUnc2.svg)](https://asciinema.org/a/SYxNKlup6sO50ZocHLoxRUnc2)
-
+>[![asciicast](https://asciinema.org/a/jescGCHYqZ0Xr4E8Zb8dTJybb.svg)](https://asciinema.org/a/jescGCHYqZ0Xr4E8Zb8dTJybb)
 
 ## Usage
->To game, use commands:
-```npx brain-even```  # to guess is even the number
-```npx brain-calc```  # to calculate the operation
-```npx brain-gcd```   # to find the greatest common divisor
-```npx brain-prime``` # to to guess is prime the number
-```npx brain-prog```  # to find the missing number of progression
+##### To game, use commands:
+* ```npx brain-even```  # to guess is even the number
+* ```npx brain-calc```  # to calculate the operation
+* ```npx brain-gcd```   # to find the greatest common divisor
+* ```npx brain-prime``` # to to guess is prime the number
+* ```npx brain-prog```  # to find the missing number of progression
 
+##### You may watch down several demonstrative videos: 
 
->You may watch down the demonstrative videos:
 ### brain-even
-[![asciicast](https://asciinema.org/a/B35Bkx9Xf8FI6AcSuUQWd7OAA.svg)](https://asciinema.org/a/B35Bkx9Xf8FI6AcSuUQWd7OAA)
+>[![asciicast](https://asciinema.org/a/q2DqVTwYWI1nTbAv3wJHdbhUE.svg)](https://asciinema.org/a/q2DqVTwYWI1nTbAv3wJHdbhUE)
 	
 ### brain-calc
-[![asciicast](https://asciinema.org/a/QMURm67lKJH6oBwQideL7pLnt.svg)](https://asciinema.org/a/QMURm67lKJH6oBwQideL7pLnt)
+>[![asciicast](https://asciinema.org/a/ymPHJvUEz6sJVJWKnrFqcl85n.svg)](https://asciinema.org/a/ymPHJvUEz6sJVJWKnrFqcl85n)
 
 ### brain-gcd
-[![asciicast](https://asciinema.org/a/7apQzLmeAa9U0U8Lno7EBcCdJ.svg)](https://asciinema.org/a/7apQzLmeAa9U0U8Lno7EBcCdJ)
+>[![asciicast](https://asciinema.org/a/EcrAiR8EpbIsnWs753MrsRrMQ.svg)](https://asciinema.org/a/EcrAiR8EpbIsnWs753MrsRrMQ)
 
 ### brain-progression
-[![asciicast](https://asciinema.org/a/1rSDeGSQlktlCcUgeaSvKrrcE.svg)](https://asciinema.org/a/1rSDeGSQlktlCcUgeaSvKrrcE)
+>[![asciicast](https://asciinema.org/a/oh7xrEb4R5kY2bViZrqnYXL3l.svg)](https://asciinema.org/a/oh7xrEb4R5kY2bViZrqnYXL3l)
 
 ### brain-prime
-[![asciicast](https://asciinema.org/a/jfjbC8PgE4YHWS83t53OcKobF.svg)](https://asciinema.org/a/jfjbC8PgE4YHWS83t53OcKobF)
+>[![asciicast](https://asciinema.org/a/4kUIQVYrYfRkCRN6xhm9E6akf.svg)](https://asciinema.org/a/4kUIQVYrYfRkCRN6xhm9E6akf)
