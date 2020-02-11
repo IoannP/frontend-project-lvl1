@@ -14,10 +14,10 @@ export default (dataGame, description) => {
     const correctAnswer = dataRound[1];
     if (userAnswer !== correctAnswer) {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${userName}!`);
-      return '';
+      return false;
     }
     console.log('Correct!');
   }
   console.log(`Congratulations, ${userName}!`);
-  return '';
+  return true;
 };

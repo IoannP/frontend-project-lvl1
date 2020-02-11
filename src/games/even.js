@@ -4,7 +4,7 @@ import getRandomNumber from '../utils';
 const isEven = (number) => (number % 2 === 0);
 
 const getDataGame = () => {
-  const question = getRandomNumber(1, 100);
+  const question = getRandomNumber();
   const answer = (isEven(question) ? 'yes' : 'no');
   return [question, answer];
 };

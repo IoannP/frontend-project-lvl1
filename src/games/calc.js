@@ -9,14 +9,14 @@ const getOperator = () => {
   return operators[sign];
 };
 
-const calculator = (operator, firstOperand, secondOperand) => {
-  switch (operator) {
+const calculator = (sign, a, b) => {
+  switch (sign) {
     case '+':
-      return firstOperand + secondOperand;
+      return a + b;
     case '-':
-      return firstOperand - secondOperand;
+      return a - b;
     case '*':
-      return firstOperand * secondOperand;
+      return a * b;
     default:
       return null;
   }
@@ -24,11 +24,11 @@ const calculator = (operator, firstOperand, secondOperand) => {
 
 // game's parameters
 const getDataGame = () => {
-  const numberOne = getRandomNumber(1, 100);
-  const numberTwo = getRandomNumber(1, 100);
-  const sign = getOperator();
-  const question = `${numberOne} ${sign} ${numberTwo}`;
-  const answer = calculator(sign, numberOne, numberTwo);
+  const firstOperand = getRandomNumber();
+  const secondOperand = getRandomNumber();
+  const operator = getOperator();
+  const question = `${firstOperand} ${operator} ${secondOperand}`;
+  const answer = calculator(operator, firstOperand, secondOperand);
   return [question, `${answer}`];
 };
 

@@ -3,8 +3,8 @@ import getRandomNumber from '../utils';
 
 const getDataGame = () => {
   const progression = [];
-  const firstNumber = getRandomNumber(1, 100);
-  const difference = getRandomNumber(1, 100);
+  const firstNumber = getRandomNumber();
+  const difference = getRandomNumber();
   const length = 10;
   let missingNumber;
   const blank = getRandomNumber(0, length - 1);

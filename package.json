@@ -1,7 +1,7 @@
 {
   "name": "brain-project",
   "version": "1.6.6",
-  "description": "Numbers games",
+  "description": "Number games",
   "bin": {
     "brain-even": "dist/bin/brain-even.js",
     "brain-calc": "dist/bin/brain-calc.js",
@@ -48,7 +48,8 @@
     "calculation",
     "divisor",
     "progression",
-    "prime"
+    "prime",
+    "number games"
   ],
   "homepage": "https://github.com/gioahnn/frontend-project-lvl1#readme"
 }

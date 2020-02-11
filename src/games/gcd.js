@@ -1,17 +1,12 @@
 import flow from '../index';
 import getRandomNumber from '../utils';
 
-const getGreatestCommonDivisor = (firstNumber, secondNumber) => {
-  let a = firstNumber;
-  let b = secondNumber;
-  while (b) b = a % (a = b);
-  return a;
-};
+const getGreatestCommonDivisor = (x, y) => (x ? getGreatestCommonDivisor(y % x, x) : y);
 
 // game's parameters
 const getDataGame = () => {
-  const numberOne = getRandomNumber(1, 100);
-  const numberTwo = getRandomNumber(1, 100);
+  const numberOne = getRandomNumber();
+  const numberTwo = getRandomNumber();
   const question = `${numberOne} ${numberTwo}`;
   const answer = getGreatestCommonDivisor(numberOne, numberTwo);
   return [question, `${answer}`];

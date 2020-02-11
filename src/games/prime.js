@@ -2,19 +2,16 @@ import flow from '../index';
 import getRandomNumber from '../utils';
 
 const isPrime = (number) => {
-  if (number < 2) {
-    return false;
-  }
-  const squareFromNumber = Math.sqrt(number);
-  for (let divisor = 2; divisor <= squareFromNumber; divisor += 1) {
+  const squareRoot = Math.sqrt(number);
+  for (let divisor = 2; divisor <= squareRoot; divisor += 1) {
     if (number % divisor === 0) return false;
   }
-  return true;
+  return number > 1;
 };
 
 // game's parameters
 const getDataGame = () => {
-  const question = getRandomNumber(1, 100);
+  const question = getRandomNumber();
   const answer = isPrime(question) ? 'yes' : 'no';
   return [question, answer];
 };
