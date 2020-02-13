@@ -4,12 +4,11 @@ import getRandomNumber from '../utils';
 const operators = ['+', '-', '*'];
 
 const getOperator = () => {
-  const length = operators.length - 1;
-  const sign = getRandomNumber(0, length);
+  const sign = getRandomNumber(0, operators.length - 1);
   return operators[sign];
 };
 
-const calculator = (sign, a, b) => {
+const calculate = (sign, a, b) => {
   switch (sign) {
     case '+':
       return a + b;
@@ -28,11 +27,11 @@ const getDataGame = () => {
   const secondOperand = getRandomNumber();
   const operator = getOperator();
   const question = `${firstOperand} ${operator} ${secondOperand}`;
-  const answer = calculator(operator, firstOperand, secondOperand);
-  return [question, `${answer}`];
+  const answer = calculate(operator, firstOperand, secondOperand);
+  return [question, answer.toString()];
 };
 
 const description = 'What is the result of the expression?';
 
 // game
-export default () => (flow(getDataGame, description));
+export default () => flow(getDataGame, description);

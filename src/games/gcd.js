@@ -9,10 +9,10 @@ const getDataGame = () => {
   const numberTwo = getRandomNumber();
   const question = `${numberOne} ${numberTwo}`;
   const answer = getGreatestCommonDivisor(numberOne, numberTwo);
-  return [question, `${answer}`];
+  return [question, answer.toString()];
 };
 
 const description = 'Find the greatest common divisor of given numbers.';
 
 // game
-export default () => (flow(getDataGame, description));
+export default () => flow(getDataGame, description);

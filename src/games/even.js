@@ -12,4 +12,4 @@ const getDataGame = () => {
 const description = 'Answer \'yes\' if the number is even, otherwise answer \'no\'.';
 
 // game
-export default () => (flow(getDataGame, description));
+export default () => flow(getDataGame, description);
