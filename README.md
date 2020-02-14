@@ -2,7 +2,6 @@
 
 
 # BRAIN-GAMES 
----
 #### Welcom to the brain-games. This package is several number games.
 
 
@@ -19,8 +18,8 @@ To game, use commands:
 * ```npx brain-prime``` # to to guess is prime the number
 * ```npx brain-prog```  # to find the missing number of progression
 
+
 ## You may watch down several demonstrative videos:
----
 #### brain-even
 >[![asciicast](https://asciinema.org/a/q2DqVTwYWI1nTbAv3wJHdbhUE.svg)](https://asciinema.org/a/q2DqVTwYWI1nTbAv3wJHdbhUE)
 	
