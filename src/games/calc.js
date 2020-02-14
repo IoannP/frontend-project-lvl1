@@ -4,8 +4,8 @@ import getRandomNumber from '../utils';
 const operators = ['+', '-', '*'];
 
 const getOperator = () => {
-  const sign = getRandomNumber(0, operators.length - 1);
-  return operators[sign];
+  const indexOfOperator = getRandomNumber(0, operators.length - 1);
+  return operators[indexOfOperator];
 };
 
 const calculate = (sign, a, b) => {
